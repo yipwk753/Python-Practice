@@ -1,6 +1,6 @@
 dividend = .36
 sharePrice = 36
-sharesPerMonth = 80
+sharesPerMonth = 90
 desiredAnnualDividends = 12000.00
 unpaidShares = 0.0
 contributedShares = 0.0
