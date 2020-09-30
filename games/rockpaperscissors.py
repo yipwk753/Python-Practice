@@ -28,10 +28,10 @@ while game_over is not True:
             loss += 1
             print(f"You chose {user_choice} and your opponent chose {opponent_choice}.  You lose.")
     print()
-    answer = input("Do you want to play again? Yes/No\n")
-    if (answer.lower() in ("yes", "y")):
-        continue
-    elif (answer.lower() in ("no", "n")):
+    answer = input("Do you want to play again? Yes/No or y/n\n")
+    while answer.lower() not in ("yes", "y", "no", "n"):
+        answer = input("Please input a correct choice: Yes/No or y/n\n")
+    if (answer.lower() in ("no", "n")):
         game_over = True
 print(f"You won {wins} time(s).")
 print(f"You lost {loss} time(s).")
