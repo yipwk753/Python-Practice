@@ -1,7 +1,15 @@
 #https://icodemag.com/understanding-python-dunder-magic-methods/
 #https://medium.com/python-features/magic-methods-demystified-3c9e93144bf7
 class Dunder(object):
+    def __new__(cls, x, y, l):
+        print("New")
+        #If both return statements are commented out, None is returned and the program breaks
+        return super(Dunder, cls).__new__(cls)
+        # return object.__new__(cls)
+
     def __init__(self, x, y, l):
+        print("Init")
+        print(self.a)
         self.x = x
         self.y = y
         self.l = l
