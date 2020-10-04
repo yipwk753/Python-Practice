@@ -1,3 +1,4 @@
+#https://www.python-course.eu/python3_class_and_instance_attributes.php
 class A:
     a = "class attribute"
 
